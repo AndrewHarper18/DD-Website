@@ -1,125 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Streamer Name - Live Streaming</title>
+  <title>DrewbyDoo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <style>
     body {
       font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #F89939, #32678C, #1c1c1c);
+      color: #fff;
       margin: 0;
       padding: 0;
     }
     
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px;
     }
     
     h1 {
       font-size: 36px;
+      text-align: center;
+      margin-bottom: 20px;
+      background-color: #32678C; /* Background box color */
+      background-color: rgba(0, 35, 125, 0.5); /* Background box color fallback for older browsers */
+      padding: 10px;
+      border-radius: 10px;
     }
     
-    .container {
-      max-width: 800px;
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      background-color: #32678C; /* Background box color */
+      background-color: rgba(0, 35, 125, 0.5); /* Background box color fallback for older browsers */
+      padding: 10px;
+      border-radius: 10px;
+    }
+    
+    .streamer-image {
+      display: block;
       margin: 0 auto;
-      padding: 20px;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
     }
     
-    .stream-video {
+    .streamer-video {
+      margin-top: 20px;
+      text-align: center;
+    }
+    
+    .streamer-video iframe {
       width: 100%;
-      height: auto;
+      height: 540px;
+    }
+    
+    .streamer-name {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      background-color: #32678C; /* Background box color */
+      background-color: rgba(0, 35, 125, 0.5); /* Background box color fallback for older browsers */
+      padding: 10px;
+      border-radius: 10px;
+    }
+    
+    .streamer-description {
+      text-align: center;
+      margin-bottom: 40px;
+      background-color: #32678C; /* Background box color */
+      background-color: rgba(0, 35, 125, 0.5); /* Background box color fallback for older browsers */
+      padding: 10px;
+      border-radius: 10px;
+    }
+    
+    .social-icons {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .social-icons a {
+      color: #fff;
+      font-size: 24px;
+      margin: 0 10px;
     }
     
     .feature-boxes {
-      margin-top: 40px;
       display: flex;
       justify-content: space-between;
+      margin-top: 60px;
     }
     
     .feature-box {
-      width: 45%;
+      flex-basis: 30%;
       padding: 20px;
-      background-color: #f2f2f2;
+      background-color: #32678C; /* Transparent blue background */
+      background-color: rgba(0, 35, 125, 0.5); /* Transparent blue background fallback for older browsers */
       border-radius: 10px;
       text-align: center;
-      transition: transform 0.3s ease;
-      cursor: pointer;
+      transition: transform 0.3s;
+      margin: 10px;
     }
     
     .feature-box:hover {
-      transform: translateY(-10px);
+      transform: scale(1.1);
     }
     
-    .feature-box h2 {
-      font-size: 24px;
+    .feature-box h3 {
+      font-size: 20px;
       margin-bottom: 10px;
     }
     
     .feature-box p {
-      font-size: 18px;
-      color: #666;
+      font-size: 16px;
     }
     
-    .social-links {
-      text-align: center;
-      margin-top: 20px;
-    }
-    
-    .social-links a {
-      display: inline-block;
-      margin: 0 10px;
-      color: #333;
-      font-size: 24px;
-      text-decoration: none;
-    }
-    
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
+    .feature-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Streamer Name</h1>
-  </header>
-  
   <div class="container">
-    <video class="stream-video" controls>
-      <!-- Replace "video-url.mp4" with the actual URL or path of your video file -->
-      <source src="Clips/alley oop.mp4" type="video/mp4">
-      <!-- Provide alternative sources if needed (e.g., different video formats) -->
-      <!-- <source src="video-url.webm" type="video/webm"> -->
-      <!-- <source src="video-url.ogg" type="video/ogg"> -->
-      Your browser does not support the video tag.
-    </video>
+    <h1>Welcome to the Snack Shack</h1>
+    <img class="streamer-image" src="Artboard_1.png" alt="Streamer Profile Picture">
+    
+    <div class="streamer-video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/3ph9bmHehi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    
+    <h2 class="streamer-name">DrewbyDoo</h2>
+    <p class="streamer-description">This is where Drew should be a narcissist idk how to spell =)</p>
+    <div class="social-icons">
+      <a href="https://twitter.com/streamer" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/streamer" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/streamer" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.twitch.tv/streamer" target="_blank"><i class="fab fa-twitch"></i></a>
+    </div>
     
     <div class="feature-boxes">
       <div class="feature-box">
-        <h2>Feature 1</h2>
-        <p>Description of feature 1 goes here.</p>
+        <h3>Feature 1</h3>
+        <img src="feature1-image.jpg" alt="Feature 1">
+        <p>I wake up</p>
       </div>
       <div class="feature-box">
-        <h2>Feature 2</h2>
-        <p>Description of feature 2 goes here.</p>
+        <h3>Feature 2</h3>
+        <img src="feature2-image.jpg" alt="Feature 2">
+        <p>I go through the day</p>
       </div>
-    </div>
-    
-    <div class="social-links">
-      <a href="https://twitter.com/your-twitter-handle" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.instagram.com/your-instagram-handle" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.twitch.tv/your-twitch-handle" target="_blank"><i class="fab fa-twitch"></i></a>
-      <a href="https://www.youtube.com/your-youtube-channel" target="_blank"><i class="fab fa-youtube"></i></a>
+      <div class="feature-box">
+        <h3>Feature 3</h3>
+        <img src="feature3-image.jpg" alt="Feature 3">
+        <p>Lemme sleep</p>
+      </div>
     </div>
   </div>
   
-  <footer>
-    &copy; 2023 Streamer Name. All rights reserved.
-  </footer>
+  <script>
+    window.addEventListener('scroll', function() {
+      var featureBoxes = document.querySelector('.feature-boxes');
+      var featureBoxesPosition = featureBoxes.getBoundingClientRect().top;
+      var screenPosition = window.innerHeight / 1.2;
+      
+      if (featureBoxesPosition < screenPosition) {
+        featureBoxes.classList.add('show');
+      }
+    });
+  </script>
 </body>
 </html>
